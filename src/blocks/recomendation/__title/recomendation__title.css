@@ -1,0 +1,22 @@
+.recomendation__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--theme-text-color);
+
+
+}
+
+.recomendation__title_small {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1025px) {
+  .recomendation__title {
+    font-size: var(--p-size);
+  }
+}

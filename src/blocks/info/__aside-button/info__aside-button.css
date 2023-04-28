@@ -1,0 +1,34 @@
+.info__aside-button {
+  padding: 10px 0;
+  background-color: #2f2f2f;
+  width: 100%;
+  text-decoration: none;
+  color: #FF5E3A;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .8s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+.info__aside-button_custom::after {
+  content: '\2192';
+}
+
+.info__aside-button_active::after {
+  content: '  \2717';
+  font-weight: 600;
+  color: rgba(242, 242, 242, .5);
+}
+
+.info__aside-button:hover {
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+  .info__aside-button {
+    font-size: 16px;
+    text-align: left;
+  }
+}

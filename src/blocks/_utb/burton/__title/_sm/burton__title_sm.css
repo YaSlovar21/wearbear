@@ -1,0 +1,17 @@
+.burton__title_sm {
+  font-size: 36px;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1441px) {
+  .burton__title_sm {
+    font-size: 32px;
+  }
+}
+
+
+@media screen and (max-width: 1025px) {
+  .burton__title_sm {
+    font-size: 28px;
+  }
+}

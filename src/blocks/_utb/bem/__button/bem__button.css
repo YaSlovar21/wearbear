@@ -1,0 +1,18 @@
+.bem__button {
+  border: none;
+  outline: none;
+  background: none;
+  text-align: center;
+
+  padding: var(--bem-padding-buttons);
+  color: var(--theme-text-color);
+
+  background-color: var(--bg-darker-color);
+
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.bem__button_lined {
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+.filter-form__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.filter-form__input-span {
+  transition: all .2s ease-in;
+}
+
+.filter-form__input:checked + .filter-form__input-span {
+  background-color: var(--theme-main-color);
+  color: #202020;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-form {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}

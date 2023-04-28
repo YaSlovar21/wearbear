@@ -1,0 +1,7 @@
+/*ЦИТАТА*/
+.info__quote {
+  padding-left: 30px;
+  border-left: 2px solid #FF5E3A;
+  line-height: 1.2;
+  font-size: var(--info-text-size);
+}

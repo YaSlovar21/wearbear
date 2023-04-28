@@ -1,0 +1,47 @@
+.burton__breadcrumbs-link {
+  text-decoration: underline;
+  color: #c4c4c4d5;
+  margin-bottom: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .burton__breadcrumbs-link {
+    /*margin-left: 10px;*/
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .burton__breadcrumbs-link {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .burton__breadcrumbs-link {
+    font-size: 12px;
+  }
+}
+
+.burton__breadcrumbs-link::after {
+  content: ' / ';
+  margin-left: 4px;
+  color: #FF5E3A;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.burton__breadcrumbs-link_type_here {
+  text-decoration: none;
+}
+
+.burton__breadcrumbs-link_type_here::after {
+  content: '';
+}

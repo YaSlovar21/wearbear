@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename.split('/index.html')[0] %>/"  rel="canonical" />
+    <!-- Yandex.RTB -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class="page">
+  <%= require('html-loader!./inner-metrika-stanko-tsep.html').default %>
+  <header>
+    <%= _.template(require('html-loader!./insets/inner-header.html').default)({fileName: htmlWebpackPlugin.options.filename}) %>
+    <div class="hero hero_category">
+
+    </div>
+  </header>
+  <div class="content-wrapper">
+    <main class="content">
+        <nav class="breadcrumbs">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item"><a href="/">Главная</a></li>
+                <li class="breadcrumbs__list-item"><a href="/prom-chains/">Каталог</a></li>
+                <li class="breadcrumbs__list-item breadcrumbs__list-item_here"><a href="/prom-chains/gruz-tsepi/">Цепи грузовые пластинчатые</a></li>
+            </ol>
+        </nav>    
+        <h1>Цепи грузовые пластинчатые</h1>
+        <p>
+            Грузовые пластинчатые цепи изотавливаются в соответствии с ГОСТ 191-82 и применяются в цепных передачах
+            возвратно-поступательного движения. В нашем каталоге представлены следующие цепи:
+        </p>
+        <ul class="bem__list">
+            <li class="bem__list-item"><a href="/prom-chains/gruz-tsepi/g100-1-45/">G100-1-45</a></li>
+            <li class="bem__list-item"><a href="/prom-chains/gruz-tsepi/g160-1-50/">G160-1-50</a></li>
+            <li class="bem__list-item"><a href="/prom-chains/gruz-tsepi/g160-3-50/">G160-3-50</a></li>
+            <li class="bem__list-item"><a href="/prom-chains/gruz-tsepi/g160-5-50/">G160-5-50</a></li>
+            <li class="bem__list-item"><a href="/prom-chains/gruz-tsepi/g250-5-60/">G250-5-60</a></li>
+            <li class="bem__list-item"><a href="/prom-chains/gruz-tsepi/g500-5-80/">G500-5-80</a></li>
+        </ul>
+        <h2>ГОСТ 191-82</h2>
+        <ul class="bem__list chaingrid">
+            <li class="chaingrid__list-item">
+                <h3>Тип 1</h3>
+                <img class="chaingrid__image" src="<%= require('./images/gruz/3d/tip_1.jpg')%>" alt="цепь грузовая пластинчатая с соединительным валиком на одном конце отрезка цепи">
+                <p class="chaingrid__desc">с соединительным валиком на одном конце отрезка цепи</p>
+            </li>
+            <li class="chaingrid__list-item">
+                <h3>Тип 2</h3> 
+                <img class="chaingrid__image" src="<%= require('./images/gruz/3d/tip_2.jpg')%>" alt="цепь грузовая пластинчатая с соединительным валиком на одном конце отрезка цепи и удлиненными валиками">
+                <p class="chaingrid__desc">с соединительным валиком на одном конце отрезка цепи и удлиненными валиками</p>
+            </li>
+            <li class="chaingrid__list-item">
+                <h3>Тип 3</h3>
+                <img class="chaingrid__image" src="<%= require('./images/gruz/3d/tip_3.jpg')%>" alt="цепь грузовая пластинчатая c соединительным валиком на одном конце, концевыми пластинами и концевым валиком на другом конце отрезка цепи">
+                <p class="chaingrid__desc">c соединительным валиком на одном конце, концевыми пластинами и концевым валиком на другом конце отрезка цепи</p>
+            </li>
+            <li class="chaingrid__list-item">
+                <h3>Тип 4</h3> 
+                <img class="chaingrid__image" src="<%= require('./images/gruz/3d/tip_4.jpg')%>" alt="цепь грузовая пластинчатая c соединительным валиком на одном конце, концевыми пластинами и концевым валиком на другом конце отрезка цепи и удлиненными валиками">
+                <p class="chaingrid__desc">c соединительным валиком на одном конце, концевыми пластинами и концевым валиком на другом конце отрезка цепи и удлиненными валиками</p>
+            </li>
+            <li class="chaingrid__list-item">
+                <h3>Тип 5</h3>
+                <img class="chaingrid__image" src="<%= require('./images/gruz/3d/tip_5.jpg')%>" alt="цепь грузовая пластинчатая c концевыми пластинами и концевым валиком на одном конце отрезка цепи">
+                <p class="chaingrid__desc">c концевыми пластинами и концевым валиком на одном конце отрезка цепи</p>
+            </li>
+            <li class="chaingrid__list-item">
+                <h3>Тип 6</h3>
+                <img class="chaingrid__image" src="<%= require('./images/gruz/3d/tip_6.jpg')%>" alt="цепь грузовая пластинчатая c концевыми пластинами и концевым валиком на обоих концах отрезка цепи">
+                <p class="chaingrid__desc">c концевыми пластинами и концевым валиком на обоих концах отрезка цепи</p>
+            </li>
+        </ul>
+        
+        <div style="overflow-x: auto">
+            <table class="rtable rtable_gruz">
+                <thead>
+                    <tr>
+                        <th rowspan="2">
+                        Тип цепи
+                        </th>
+                        <th rowspan="2">
+                        Шаг цепи t
+                        </th>
+                        <th rowspan="2">
+                        Опорная поверхность, мм²
+                        </th>
+                        <th rowspan="2">
+                        h, max
+                        </th>
+                        <th colspan="2">
+                        d1
+                        </th>
+                        <th rowspan="2">
+                        t1
+                        </th>
+                        <th rowspan="2">
+                        b1, max
+                        </th>
+                        <th rowspan="2">
+                        b2, max
+                        </th>
+                        <th rowspan="2">
+                        b3, min
+                        </th>
+                        <th rowspan="2">
+                        b7, max
+                        </th>
+                        <th rowspan="2">
+                        s
+                        </th>
+                        <th rowspan="2">
+                        Число пластин, max
+                        </th>
+                        <th rowspan="2">
+                        Масса 1 м цепи, кг
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        Номин.
+                        </th>
+                        <th>
+                        Пред. откл.
+                        </th>
+                    </tr>
+                </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="12">
+                        1 – 6
+                        </td>
+                        <td>
+                        25
+                        </td>
+                        <td>
+                        48,0
+                        </td>
+                        <td>
+                        18
+                        </td>
+                        <td>
+                        10
+                        </td>
+                        <td>
+                        -0,10
+                        </td>
+                        <td>
+                        30
+                        </td>
+                        <td>
+                        36
+                        </td>
+                        <td>
+                        68
+                        </td>
+                        <td>
+                        18
+                        </td>
+                        <td>
+                        42
+                        </td>
+                        <td rowspan="5">
+                        3
+                        </td>
+                        <td>
+                        2
+                        </td>
+                        <td>
+                        1,68
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        30
+                        </td>
+                        <td>
+                        108,0
+                        </td>
+                        <td>
+                        20
+                        </td>
+                        <td>
+                        11
+                        </td>
+                        <td rowspan="4">
+                        -0,12
+                        </td>
+                        <td>
+                        40
+                        </td>
+                        <td>
+                        51
+                        </td>
+                        <td>
+                        88
+                        </td>
+                        <td>
+                        20
+                        </td>
+                        <td>
+                        58
+                        </td>
+                        <td rowspan="7">
+                        4
+                        </td>
+                        <td>
+                        2,76
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        35
+                        </td>
+                        <td>
+                        120,0
+                        </td>
+                        <td>
+                        26
+                        </td>
+                        <td>
+                        12
+                        </td>
+                        <td>
+                        45
+                        </td>
+                        <td>
+                        53
+                        </td>
+                        <td>
+                        93
+                        </td>
+                        <td>
+                        22
+                        </td>
+                        <td>
+                        61
+                        </td>
+                        <td>
+                        3,30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        40
+                        </td>
+                        <td>
+                        144,0
+                        </td>
+                        <td>
+                        30
+                        </td>
+                        <td>
+                        14
+                        </td>
+                        <td>
+                        50
+                        </td>
+                        <td>
+                        58
+                        </td>
+                        <td>
+                        102
+                        </td>
+                        <td>
+                        25
+                        </td>
+                        <td>
+                        66
+                        </td>
+                        <td>
+                        3,70
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        45
+                        </td>
+                        <td>
+                        168,0
+                        </td>
+                        <td>
+                        35
+                        </td>
+                        <td>
+                        17
+                        </td>
+                        <td>
+                        55
+                        </td>
+                        <td>
+                        63
+                        </td>
+                        <td>
+                        108
+                        </td>
+                        <td>
+                        30
+                        </td>
+                        <td>
+                        70
+                        </td>
+                        <td>
+                        5,30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        50
+                        </td>
+                        <td>
+                        324,0
+                        </td>
+                        <td>
+                        38
+                        </td>
+                        <td>
+                        22
+                        </td>
+                        <td rowspan="3">
+                        -0,14
+                        </td>
+                        <td>
+                        60
+                        </td>
+                        <td>
+                        95
+                        </td>
+                        <td>
+                        146
+                        </td>
+                        <td>
+                        35
+                        </td>
+                        <td>
+                        102
+                        </td>
+                        <td>
+                        4,5
+                        </td>
+                        <td>
+                        9,40
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        55
+                        </td>
+                        <td>
+                        504,0
+                        </td>
+                        <td>
+                        40
+                        </td>
+                        <td>
+                        24
+                        </td>
+                        <td>
+                        65
+                        </td>
+                        <td>
+                        108
+                        </td>
+                        <td>
+                        163
+                        </td>
+                        <td>
+                        40
+                        </td>
+                        <td>
+                        115
+                        </td>
+                        <td rowspan="4">
+                        6
+                        </td>
+                        <td>
+                        14,60
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        60
+                        </td>
+                        <td>
+                        552,0
+                        </td>
+                        <td>
+                        45
+                        </td>
+                        <td>
+                        26
+                        </td>
+                        <td>
+                        70
+                        </td>
+                        <td>
+                        114
+                        </td>
+                        <td>
+                        171
+                        </td>
+                        <td>
+                        45
+                        </td>
+                        <td>
+                        120
+                        </td>
+                        <td>
+                        17,50
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        70
+                        </td>
+                        <td>
+                        1008,0
+                        </td>
+                        <td>
+                        55
+                        </td>
+                        <td>
+                        32
+                        </td>
+                        <td rowspan="4">
+                        -0,17
+                        </td>
+                        <td>
+                        85
+                        </td>
+                        <td>
+                        148
+                        </td>
+                        <td>
+                        213
+                        </td>
+                        <td>
+                        50
+                        </td>
+                        <td>
+                        157
+                        </td>
+                        <td rowspan="3">
+                        6
+                        </td>
+                        <td>
+                        25,80
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        80
+                        </td>
+                        <td>
+                        1152,0
+                        </td>
+                        <td>
+                        60
+                        </td>
+                        <td>
+                        36
+                        </td>
+                        <td>
+                        100
+                        </td>
+                        <td>
+                        159
+                        </td>
+                        <td>
+                        233
+                        </td>
+                        <td>
+                        60
+                        </td>
+                        <td>
+                        171
+                        </td>
+                        <td>
+                        31,50
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        90
+                        </td>
+                        <td>
+                        1512,0
+                        </td>
+                        <td>
+                        70
+                        </td>
+                        <td>
+                        40
+                        </td>
+                        <td>
+                        120
+                        </td>
+                        <td>
+                        198
+                        </td>
+                        <td>
+                        266
+                        </td>
+                        <td>
+                        70
+                        </td>
+                        <td>
+                        200
+                        </td>
+                        <td rowspan="2">
+                        7
+                        </td>
+                        <td>
+                        46,80
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        100
+                        </td>
+                        <td>
+                        2240,0
+                        </td>
+                        <td>
+                        80
+                        </td>
+                        <td>
+                        45
+                        </td>
+                        <td>
+                        140
+                        </td>
+                        <td>
+                        237
+                        </td>
+                        <td>
+                        309
+                        </td>
+                        <td>
+                        80
+                        </td>
+                        <td>
+                        239
+                        </td>
+                        <td>
+                        8
+                        </td>
+                        <td>
+                        69,40
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Примечания:</h3>
+        <ul class="bem__list">
+            <li class="bem__list-item">Шероховатость поверхности средней части валика должна быть Ra ≤ 6,3 по ГОСТ 2789.</li>
+            <li class="bem__list-item">Масса цепи приведена без присоединительных элементов.</li>
+            <li class="bem__list-item">Допускается изменение длины валиков (всех видов); ширины и толщины пластин (всех видов) и массы 1м цепи – по согласованию с потребителем при условии сохранения разрушающей нагрузки и опорной поверхности (не менее, указанных в таблице).</li>
+        </ul>
+    </main>
+    <div class="adv">
+        <%= require('html-loader!./inner-adv.html').default %>
+    </div>
+  </div>
+  <%= require('html-loader!./insets/inner-footer.html').default %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

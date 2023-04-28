@@ -1,0 +1,16 @@
+.info__span-bsz-accent {
+  color: #2F80ED;
+  position: relative;
+  padding-left: 30px;
+}
+
+.info__span-bsz-accent::before {
+  position: absolute;
+  left: 0px;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../../images/logo_BSZ_svg.svg');
+  background-position: center;
+  background-size: contain;
+}

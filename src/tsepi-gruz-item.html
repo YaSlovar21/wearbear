@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename.split('/index.html')[0] %>/"  rel="canonical" />
+  <!-- Yandex.RTB -->
+  <script>window.yaContextCb=window.yaContextCb||[]</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class="page">
+  <%= require('html-loader!./inner-metrika-stanko-tsep.html').default %>
+  <header>
+    <%= _.template(require('html-loader!./insets/inner-header.html').default)({fileName: htmlWebpackPlugin.options.filename}) %>
+    <div class="hero hero_category">
+
+    </div>
+  </header>
+  <div class="content-wrapper">
+    <main class="content">
+        <nav class="breadcrumbs">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item"><a href="/">Главная</a></li>
+                <li class="breadcrumbs__list-item"><a href="/prom-chains/">Каталог</a></li>
+                <li class="breadcrumbs__list-item"><a href="/prom-chains/gruz-tsepi/">Цепи грузовые пластинчатые</a></li>
+                <li class="breadcrumbs__list-item breadcrumbs__list-item_here"><a href="/<%= htmlWebpackPlugin.options.filename.split('/index.html')[0] %>/"><%= htmlWebpackPlugin.options.heading %></a></li>
+            </ol>
+        </nav>    
+        <h1><%= htmlWebpackPlugin.options.heading %></h1>
+        <img src="<%=require(`./images/gruz/${tsepGruzId.toUpperCase()}.jpg`)%>" alt="Чертеж цепи <%=tsepGruzId.toUpperCase() %>">
+        
+        <table class="rtable">
+            <thead>
+                <tr>
+                    <th rowspan="2">
+                    <strong>Тип цепи</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>Шаг цепи t</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>Опорная поверх-ность, мм²</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>h, max</strong>
+                    </th>
+                    <th colspan="2">
+                    <strong>d1</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>t1</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>b1, max</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>b2, max</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>b3, min</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>b7, max</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>s</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>Число пластин, max</strong>
+                    </th>
+                    <th rowspan="2">
+                    <strong>Масса 1 м цепи, кг</strong>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <strong>Номин.</strong>
+                    </th>
+                    <th>
+                    <strong>Пред. откл.</strong>
+                    </th>
+                </tr>
+            </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="12">
+                    1 – 6
+                    </td>
+                    <td>
+                    25
+                    </td>
+                    <td>
+                    48,0
+                    </td>
+                    <td>
+                    18
+                    </td>
+                    <td>
+                    10
+                    </td>
+                    <td>
+                    -0,10
+                    </td>
+                    <td>
+                    30
+                    </td>
+                    <td>
+                    36
+                    </td>
+                    <td>
+                    68
+                    </td>
+                    <td>
+                    18
+                    </td>
+                    <td>
+                    42
+                    </td>
+                    <td rowspan="5">
+                    3
+                    </td>
+                    <td>
+                    2
+                    </td>
+                    <td>
+                    1,68
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    30
+                    </td>
+                    <td>
+                    108,0
+                    </td>
+                    <td>
+                    20
+                    </td>
+                    <td>
+                    11
+                    </td>
+                    <td rowspan="4">
+                    -0,12
+                    </td>
+                    <td>
+                    40
+                    </td>
+                    <td>
+                    51
+                    </td>
+                    <td>
+                    88
+                    </td>
+                    <td>
+                    20
+                    </td>
+                    <td>
+                    58
+                    </td>
+                    <td rowspan="7">
+                    4
+                    </td>
+                    <td>
+                    2,76
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    35
+                    </td>
+                    <td>
+                    120,0
+                    </td>
+                    <td>
+                    26
+                    </td>
+                    <td>
+                    12
+                    </td>
+                    <td>
+                    45
+                    </td>
+                    <td>
+                    53
+                    </td>
+                    <td>
+                    93
+                    </td>
+                    <td>
+                    22
+                    </td>
+                    <td>
+                    61
+                    </td>
+                    <td>
+                    3,30
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    40
+                    </td>
+                    <td>
+                    144,0
+                    </td>
+                    <td>
+                    30
+                    </td>
+                    <td>
+                    14
+                    </td>
+                    <td>
+                    50
+                    </td>
+                    <td>
+                    58
+                    </td>
+                    <td>
+                    102
+                    </td>
+                    <td>
+                    25
+                    </td>
+                    <td>
+                    66
+                    </td>
+                    <td>
+                    3,70
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    45
+                    </td>
+                    <td>
+                    168,0
+                    </td>
+                    <td>
+                    35
+                    </td>
+                    <td>
+                    17
+                    </td>
+                    <td>
+                    55
+                    </td>
+                    <td>
+                    63
+                    </td>
+                    <td>
+                    108
+                    </td>
+                    <td>
+                    30
+                    </td>
+                    <td>
+                    70
+                    </td>
+                    <td>
+                    5,30
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    50
+                    </td>
+                    <td>
+                    324,0
+                    </td>
+                    <td>
+                    38
+                    </td>
+                    <td>
+                    22
+                    </td>
+                    <td rowspan="3">
+                    -0,14
+                    </td>
+                    <td>
+                    60
+                    </td>
+                    <td>
+                    95
+                    </td>
+                    <td>
+                    146
+                    </td>
+                    <td>
+                    35
+                    </td>
+                    <td>
+                    102
+                    </td>
+                    <td>
+                    4,5
+                    </td>
+                    <td>
+                    9,40
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    55
+                    </td>
+                    <td>
+                    504,0
+                    </td>
+                    <td>
+                    40
+                    </td>
+                    <td>
+                    24
+                    </td>
+                    <td>
+                    65
+                    </td>
+                    <td>
+                    108
+                    </td>
+                    <td>
+                    163
+                    </td>
+                    <td>
+                    40
+                    </td>
+                    <td>
+                    115
+                    </td>
+                    <td rowspan="4">
+                    6
+                    </td>
+                    <td>
+                    14,60
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    60
+                    </td>
+                    <td>
+                    552,0
+                    </td>
+                    <td>
+                    45
+                    </td>
+                    <td>
+                    26
+                    </td>
+                    <td>
+                    70
+                    </td>
+                    <td>
+                    114
+                    </td>
+                    <td>
+                    171
+                    </td>
+                    <td>
+                    45
+                    </td>
+                    <td>
+                    120
+                    </td>
+                    <td>
+                    17,50
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    70
+                    </td>
+                    <td>
+                    1008,0
+                    </td>
+                    <td>
+                    55
+                    </td>
+                    <td>
+                    32
+                    </td>
+                    <td rowspan="4">
+                    -0,17
+                    </td>
+                    <td>
+                    85
+                    </td>
+                    <td>
+                    148
+                    </td>
+                    <td>
+                    213
+                    </td>
+                    <td>
+                    50
+                    </td>
+                    <td>
+                    157
+                    </td>
+                    <td rowspan="3">
+                    6
+                    </td>
+                    <td>
+                    25,80
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    80
+                    </td>
+                    <td>
+                    1152,0
+                    </td>
+                    <td>
+                    60
+                    </td>
+                    <td>
+                    36
+                    </td>
+                    <td>
+                    100
+                    </td>
+                    <td>
+                    159
+                    </td>
+                    <td>
+                    233
+                    </td>
+                    <td>
+                    60
+                    </td>
+                    <td>
+                    171
+                    </td>
+                    <td>
+                    31,50
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    90
+                    </td>
+                    <td>
+                    1512,0
+                    </td>
+                    <td>
+                    70
+                    </td>
+                    <td>
+                    40
+                    </td>
+                    <td>
+                    120
+                    </td>
+                    <td>
+                    198
+                    </td>
+                    <td>
+                    266
+                    </td>
+                    <td>
+                    70
+                    </td>
+                    <td>
+                    200
+                    </td>
+                    <td rowspan="2">
+                    7
+                    </td>
+                    <td>
+                    46,80
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    100
+                    </td>
+                    <td>
+                    2240,0
+                    </td>
+                    <td>
+                    80
+                    </td>
+                    <td>
+                    45
+                    </td>
+                    <td>
+                    140
+                    </td>
+                    <td>
+                    237
+                    </td>
+                    <td>
+                    309
+                    </td>
+                    <td>
+                    80
+                    </td>
+                    <td>
+                    239
+                    </td>
+                    <td>
+                    8
+                    </td>
+                    <td>
+                    69,40
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>ГОСТ 191-82</h3>
+        <p>Цепь грузовая <%= tsepGruzId.toUpperCase() %> должна быть изготовлена в соответствии с ГОСТ 191-82.</p>
+    </main>
+    <div class="adv">
+        <%= require('html-loader!./inner-adv.html').default %>
+    </div>
+  </div>
+  <%= require('html-loader!./insets/inner-footer.html').default %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

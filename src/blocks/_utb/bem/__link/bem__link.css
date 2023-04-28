@@ -1,0 +1,12 @@
+.bem__link {
+  color: var(--theme-text-color);
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1025px) {
+  .bem__link {
+    font-size: var(--p-size);
+  }
+}

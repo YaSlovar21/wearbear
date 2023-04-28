@@ -1,0 +1,13 @@
+.heatex__image_place_popup {
+  flex-basis: 350px;
+  min-height: 0;
+  min-width: 0;
+
+  transition: all .7s ease-in .3s;
+  opacity: 0;
+}
+
+
+
+
+

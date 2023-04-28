@@ -1,0 +1,14 @@
+.info__aside-img {
+  max-width: 80%;
+  max-height: 55vh;
+  min-height: 0;
+  flex-basis: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .info__aside-img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

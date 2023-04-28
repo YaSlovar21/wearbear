@@ -1,0 +1,13 @@
+.dg__popup-content {
+  display: flex;
+  position: relative;
+}
+
+@media screen and (max-width: 769px) {
+  .dg__popup-content {
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    height: calc(100% - 50px);
+  }
+}

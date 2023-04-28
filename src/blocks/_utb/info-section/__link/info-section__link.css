@@ -1,0 +1,26 @@
+.info-section__link {
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: var(--p-size-medium);
+}
+
+
+.info-section__link_bg {
+  background-color: var(--bg-color);
+}
+
+
+.info-section__link_checkbox {
+  max-width: calc(100% - 20px);
+  border: 2px solid var(--bg-color);
+  display: block;
+  margin-top: 20px;
+  font-size: var(--p-size);
+}
+
+
+@media screen and (max-width: 1025px) {
+  .info-section__link {
+    font-size: var(--p-size-small);
+  }
+}

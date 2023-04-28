@@ -1,0 +1,45 @@
+:root {
+  --info-text-size: 22px;
+  --info-mainpage-text-size: 18px;
+  --info-text-color: #f2f2f2;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --info-text-size: 16px;
+    --info-mainpage-text-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --info-text-size: 16px;
+    --info-mainpage-text-size: 14px;
+  }
+}
+
+.info {
+    height: 70vh;
+    margin: 40px auto 80px;
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    height: 90vh;
+  }
+}
+
+/*блок картинка + текст*/
+.info__paragraph-img {
+    margin: 0;
+}
+.info__image {
+    margin: 20px 20px 10px 0px;
+    width: 30%;
+}
+
+
+/*Стили swiper Перенесено */

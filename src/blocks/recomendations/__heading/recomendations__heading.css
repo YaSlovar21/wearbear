@@ -1,0 +1,17 @@
+.recomendations__heading {
+  margin: 0 0 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 121.52%;
+  /* identical to box height, or 17px */
+
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+
+  color: #C4C4C4;
+}
+
+.recomendations__heading_bold {
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}

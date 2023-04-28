@@ -1,0 +1,22 @@
+.bem__paragraph {
+  font-size: var(--p-size);
+  margin: 0;
+  color: var(--theme-text-color);
+  line-height: 1.4;
+}
+
+.bem__paragraph_start {
+  margin-bottom: 1em;
+}
+
+.bem__paragraph_end {
+  margin-top: 1em;
+}
+
+.bem__paragraph_inline {
+  margin: 1em 0;
+}
+
+.bem__paragraph_font_sm {
+  font-size: var(--p-size-medium);
+}

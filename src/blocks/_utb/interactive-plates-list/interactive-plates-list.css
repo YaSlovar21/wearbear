@@ -1,0 +1,45 @@
+.interactive-plates-list {
+  position: relative;
+
+  background-color: var(--bg-darker-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--p-size);
+  color: var(--theme-main-color);
+  font-weight: 600;
+
+  width: 100%;
+  padding: 90px 0;
+  cursor: pointer;
+
+  overflow: hidden;
+
+  flex-basis: 480px;
+}
+
+.interactive-plates-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(../../../images/ut/interactive-list.svg);
+  height: 82px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.interactive-plates-list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-image: url(../../../images/ut/inter-list-bottom.svg);
+  height: 82px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+

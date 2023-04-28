@@ -1,0 +1,76 @@
+.withexamples {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px auto 40px;
+  max-width: calc(100% - var(--aside-width)*2);
+}
+
+.withexamples_pl {
+  max-width: calc(100% - var(--aside-width));
+  margin: 0 0 0;
+  padding: 100px 0 40px ;
+
+}
+
+/* Левая колонка */
+.withexamples__models {
+  flex-basis: 49%;
+  box-sizing: border-box;
+}
+
+.withexamples__title {
+  margin-bottom: 30px;
+}
+
+
+.withexamples__title_pl {
+  padding-left: var(--aside-width);
+}
+
+.withexamples__title_search {
+  color: var(--theme-gray-color);
+  margin-bottom: 0;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+/* Правая колонка */
+.withexamles__raschets-search {
+  flex-basis: 51%;
+
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  /*background-color: #1a1a1a;*/
+}
+
+.withexamples__form {
+  display: flex;
+  /*margin-top: 50px;
+  flex-direction: column;*/
+  /*flex-basis: 100%;КОСТЫЛЬ!!!*/
+  padding: 30px;/*КОСТЫЛЬ!!!*/
+  box-sizing: border-box;/*КОСТЫЛЬ!!!*/
+  background-color: #1a1a1a;
+}
+
+.withexamples__formline {
+  border: 1.5px solid hsla(0,0%,67%,.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 25px;
+}
+
+.withexamples__submit-button {
+  background: transparent;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    outline: none;
+    padding: 17px 20px;
+}

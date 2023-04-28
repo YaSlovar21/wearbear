@@ -1,0 +1,13 @@
+.burton__tag {
+  position: relative;
+  z-index: 4;
+  padding: 7px 14px;
+  background-color: #f5474a;
+  margin: 40px 0 10px;
+  font-weight: 600;
+  font-size: var(--p-small-size);
+  line-height: 121.52%;
+
+  align-self: flex-start;
+  color: var(--theme-text-color);
+}

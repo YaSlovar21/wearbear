@@ -1,0 +1,16 @@
+.recomendations__list-item {
+  padding: 28px 39px;
+  box-sizing: border-box;
+  background-color: var(--bg-darker-color);
+  margin-bottom: 20px;
+}
+
+.recomendations__list-item_wlink {
+  padding: 0;
+}
+.recomendations__list-item_place_table {
+  padding: 15px;
+  background-color: var(--theme-dark-gray-color);
+  margin: 0;
+  border: 2px solid var(--bg-darker-color);
+}

@@ -1,0 +1,15 @@
+.quotewi {
+  display: flex;
+  align-items: flex-start;
+  margin: 100px 0;
+ }
+ .quotewi__img {
+
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 calc((33% - 288px) / 2);
+  border-radius: 50%;
+  border: 3px solid var(--bg-darker-color);
+ }

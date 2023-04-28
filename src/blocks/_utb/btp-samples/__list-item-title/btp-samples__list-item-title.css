@@ -1,0 +1,10 @@
+.btp-samples__list-item-title {
+  padding: 20px 20px;
+  background-color: var(--bg-darker-color);
+  color: var(--theme-text-color);
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--main-equivalent-color);
+  font-weight: 500;
+}

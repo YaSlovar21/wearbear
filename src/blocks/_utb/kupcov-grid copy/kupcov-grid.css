@@ -1,0 +1,123 @@
+.kupcov-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 400px;
+  grid-auto-rows: 400px;
+
+  gap: 10px;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kupcov-grid_pto {
+  grid-template-rows: 400px;
+  grid-auto-rows: 200px;
+}
+
+.kupcov-grid__item {
+
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.kupcov-grid__item::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  background-color: var(--bg-color);
+  top: 150px;
+  left: -50px;
+z-index: 3;
+  transition: all .5s ease-out;
+}
+
+
+.kupcov-grid__item_to-razdel::before {
+  background-color: var(--theme-dark-gray-color);
+}
+
+.kupcov-grid__item:hover::before {
+  background-color: var(--theme-main-color);
+
+  transform: rotate(45deg);
+}
+
+.kupcov-grid__intro-head {
+  transition: all .4s ease-out;
+  color: var(--theme-main-color);
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0.6em 0 0;
+  text-transform: uppercase;
+  max-width: 88px;
+}
+
+.kupcov-grid__intro-head::after{
+    content: ">";
+    margin-left: 1em;
+}
+
+.kupcov-grid__item:hover .kupcov-grid__intro-head {
+  transform: translateX(-10px) ;
+  letter-spacing: .05em;
+  color: var(--theme-text-color);
+}
+
+.kupcov-grid__link-block {
+  background-color: var(--bg-darker-color);
+  text-decoration: none;
+  color: var(--theme-text-color);
+  padding: 20px 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.kupcov-grid__heading {
+  font-size: 22px;
+  font-weight: 600;
+  max-width: 350px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1281px) {
+  .kupcov-grid__heading {
+    font-size: var(--p-size);
+  }
+}
+
+
+
+/*проба свг*/
+
+.kupcov-grid__item svg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.kupcov-grid__item .shape {
+
+  stroke-dasharray: 540;
+  stroke-dashoffset: -0;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: var(--theme-main-color);
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.kupcov-grid__item:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}

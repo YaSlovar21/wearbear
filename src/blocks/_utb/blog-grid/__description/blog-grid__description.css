@@ -1,0 +1,5 @@
+.blog-grid__description {
+  margin: 0;
+  flex-basis: 50%;
+  transition: all .3s ease-in;
+}

@@ -1,0 +1,14 @@
+.apps__more-button {
+  display: block;
+  background-color: var(--bg-color);
+  color: var(--theme-white-color);
+  width: calc(100% - var(--aside-width)*2);
+  margin: 0 auto;
+ /* border: 1px solid #2a2a2a;*/
+ box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.apps__more-button_hidden {
+  display: none;
+}
+

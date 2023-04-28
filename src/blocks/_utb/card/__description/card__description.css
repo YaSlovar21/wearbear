@@ -1,0 +1,18 @@
+.card__description {
+  flex-basis: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -0.035em;
+  color: var(--theme-white-color);
+  margin: 0;
+
+  transition: color .2s ease-in;
+}
+
+@media screen and (max-width: 1025px) {
+  .card__description {
+    font-size: var(--p-size-small);
+  }
+}

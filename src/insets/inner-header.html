@@ -1,0 +1,21 @@
+<nav class="chainsheader__nav">
+    <a class="chainsheader__nav-logo" href="/">
+        <img src="../images/header-logo.svg">
+    </a>
+    <ul class="chainsheader__nav-list">
+        <li class="chainsheader__nav-list-item">
+            <a class="chainsheader__link <%= fileName.split('/')[0] === 'prom-chains' ? 'chainsheader__link_active' : '' %>" href="/prom-chains/">Промылшенные цепи</a>
+            <ul class="chainsheader__submenu-list">
+                <li class="chainsheader__submenu-list-item"><a class="chainsheader__sub-link <%= fileName.split('/')[1] === 'tsepi-privodniye' ? 'chainsheader__sub-link_active' : '' %>" href="/prom-chains/tsepi-privodniye/">Цепи приводные роликовые</a></li>
+                <li class="chainsheader__submenu-list-item"><a class="chainsheader__sub-link <%= fileName.split('/')[1] === 'tsepi-m-mc' ? 'chainsheader__sub-link_active' : '' %>" href="/prom-chains/tsepi-m-mc/">Цепи тяговые пластинчатые</a></li>
+                <li class="chainsheader__submenu-list-item"><a class="chainsheader__sub-link <%= fileName.split('/')[1] === 'gruz-tsepi' ? 'chainsheader__sub-link_active' : '' %>" href="/prom-chains/gruz-tsepi/">Цепи грузовые пластинчатые</a></li>
+            </ul>
+        </li>
+        <li class="chainsheader__nav-list-item">
+            <a class="chainsheader__link <%= fileName.split('/')[0] === 'konstructors' ? 'chainsheader__link_active' : '' %>" href="/konstructors/">Конструкторы цепей</a>
+            <ul class="chainsheader__submenu-list">
+                <li class="chainsheader__submenu-list-item"><a class="chainsheader__sub-link <%= fileName.split('/')[1] === 'konstruktor-tyagovoj-plastinchatoj-cepi' ? 'chainsheader__sub-link_active' : '' %>" href="/konstructors/konstruktor-tyagovoj-plastinchatoj-cepi/">Для тяговых пластинчатых цепей</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>

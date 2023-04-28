@@ -1,0 +1,25 @@
+.recomendations__list {
+  margin-top: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.recomendations__list_type_flex {
+  display: flex;
+}
+
+.recomendations__list_type_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9px;
+  grid-template-rows: 178px 178px;
+  grid-auto-rows: 178px;
+}
+
+@media screen and (max-width: 1441px) {
+  .recomendations__list_type_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 178px 178px;
+    grid-auto-rows: 178px;
+  }
+}

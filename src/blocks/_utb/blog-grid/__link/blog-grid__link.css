@@ -1,0 +1,15 @@
+.blog-grid__link {
+  text-decoration: none;
+  color: unset;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+
+  padding: 30px 22px;
+}
+
+.blog-grid__link:hover {
+  
+}

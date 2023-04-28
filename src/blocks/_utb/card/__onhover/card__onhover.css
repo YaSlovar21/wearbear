@@ -1,0 +1,3 @@
+.card__onhover {
+  transition: all .2s ease-in;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename.split('/index.html')[0] %>/"  rel="canonical" />
+  <!-- Yandex.RTB -->
+  <script>window.yaContextCb=window.yaContextCb||[]</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class="page">
+  <%= require('html-loader!./inner-metrika-stanko-tsep.html').default %>
+  <header>
+    <%= _.template(require('html-loader!./insets/inner-header.html').default)({fileName: htmlWebpackPlugin.options.filename}) %>
+    <div class="hero hero_category" style="padding: 0; display: flex; align-items: center;">
+      <figure>
+        <img src="<%= require('./images/mka.svg')%>" alt="как выглядит тяговая пластинчатая цепь" style="width:100%;">
+      </figure>
+    </div>
+  </header>
+  <div class="content-wrapper">
+    <main class="content">
+      <%= require('html-loader!./insets/mmc/'+ nameId + '.html').default %>
+    </main>
+    <div class="adv">
+      <%= require('html-loader!./inner-adv.html').default %>
+  </div>
+  </div>
+  <%= require('html-loader!./insets/inner-footer.html').default %>
+</body>
+</html>

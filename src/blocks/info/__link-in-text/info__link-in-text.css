@@ -1,0 +1,17 @@
+.info__link-in-text {
+  text-decoration: underline;
+  color: rgba(242, 242, 242);
+  opacity: 0.7;
+  transition: all .4s linear;
+}
+
+.info__link-in-text:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .info__link-in-text {
+    font-size: 14px;
+  }
+}

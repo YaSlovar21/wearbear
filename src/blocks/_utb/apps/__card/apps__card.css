@@ -1,0 +1,12 @@
+.apps__card {
+  background-color: var(--bg-color);
+
+  overflow: hidden;
+  
+}
+
+
+.apps__card_place_popup {
+  background-color: transparent;
+  border: 1px solid var(--bg-darker-color);
+}

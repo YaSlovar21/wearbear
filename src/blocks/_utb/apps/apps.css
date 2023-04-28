@@ -1,0 +1,57 @@
+.apps {
+  margin-top: 115px;
+}
+
+.apps__heading {
+  margin-left: var(--aside-width);
+}
+
+.apps__description {
+  margin: 20px 0 60px var(--aside-width);
+}
+
+/* apps__list - пока что используется как форма фильтра в виде списка в строку */
+.apps__list {
+  padding-left: var(--aside-width);/*КОСТЫЛЬ*/
+  max-width: calc(100% - var(--aside-width));
+  box-sizing: border-box;
+}
+
+/* apps__desc-n-button - блок, используемый в объектах БТП (описание объекта + кнопка подробнее) */
+.apps__desc-n-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+
+.apps__change-view-button {
+  flex-basis: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .apps__change-view-button {
+    flex-basis: auto;
+  }
+
+  .apps__desc-n-button_intro {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  .apps__change-view-button {
+    font-size: var(--p-size-small);
+  }
+}
+
+.apps__change-view-button:hover {
+  color: var(--theme-main-color);
+}
+
+
+

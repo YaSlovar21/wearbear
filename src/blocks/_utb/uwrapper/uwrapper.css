@@ -1,0 +1,16 @@
+.uwrapper {
+  max-width: calc(100% - var(--aside-width)*2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uwrapper_type_pl {
+  box-sizing: border-box;
+  max-width: calc(100% - var(--aside-width));
+  margin: 0;
+}
+
+.uwrapper__section-pl {
+  padding-left: var(--aside-width);
+  box-sizing: border-box;
+}

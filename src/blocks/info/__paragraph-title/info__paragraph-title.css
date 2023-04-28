@@ -1,0 +1,15 @@
+.info__paragraph-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: #6b6b6b;
+  margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .info__paragraph-title {
+    font-size: 12px;
+  }
+}
+

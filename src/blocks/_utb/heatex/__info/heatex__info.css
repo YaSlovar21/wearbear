@@ -1,0 +1,13 @@
+.heatex__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex-basis: 761px;
+
+  margin: 100px 0;
+}
+
+.heatex__info_place_popup {
+  margin: 40px 0;
+}

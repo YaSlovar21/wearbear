@@ -1,0 +1,42 @@
+:root {
+
+  --dg-row-height: 275px;
+
+  --dynamic-grid-text-color: #1f1f1f;
+  --dynamic-grid-bg-color: #696969;
+  --dg-list-item-title-fontsize: 32px;
+  --dg-list-item-description-fontsize: 16px;
+  --dg-popup-title-fontsize: 32px;
+
+}
+
+@media screen and (max-width: 1600px) {
+  :root {
+    --dg-list-item-title-fontsize: 28px;
+    --dg-popup-title-fontsize: 28px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  :root {
+    --dg-list-item-title-fontsize: 24px;
+    --dg-list-item-description-fontsize: 14px;
+    --dg-popup-title-fontsize: 28px;
+    --dg-row-height: 215px;
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  :root {
+    --dg-list-item-title-fontsize: 22px;
+    --dg-list-item-description-fontsize: 14px;
+    --dg-popup-title-fontsize: 18px;
+    --dg-row-height: 215px;
+  }
+}
+
+.dg {
+  position: relative;
+  margin: 0;
+}
+

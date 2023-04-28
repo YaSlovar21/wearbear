@@ -1,0 +1,15 @@
+.tablemod__heading {
+    line-height: 1.15;
+    
+    margin: 0 0 0 30px;
+    position: relative;
+  }
+
+  @media screen and (max-width:375px) {
+    .tablemod__heading {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+

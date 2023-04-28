@@ -1,0 +1,21 @@
+.upf {
+  padding: 96px 0;
+  background-color: #323232;
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 96px 0 96px var(--aside-width);
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--bg-darker-color);
+  border-top: 2px solid var(--bg-darker-color);
+  max-width: calc(100% - var(--aside-width));
+}
+
+@media screen and (max-width: 1100px) {
+  .upf {
+    flex-direction: column;
+    padding: 25px 0 25px var(--aside-width);
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.info__hashtag {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  margin: 8px;
+  padding: 7px 15px;
+  background-color: #313131;
+  background-color: #ff5e3a94;
+  font-weight: 400;
+  color: #ffffff;
+  color: #2b2b2d;
+  font-size: 12px;
+  letter-spacing: 0.015em;
+  cursor: pointer;
+}

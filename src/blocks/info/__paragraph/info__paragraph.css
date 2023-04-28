@@ -1,0 +1,6 @@
+.info__paragraph {
+  font-size: var(--info-text-size);
+  margin: 10px 0 20px;
+  color: var(--info-text-color);
+  line-height: 1.5;
+}

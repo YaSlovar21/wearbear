@@ -1,0 +1,9 @@
+.dg__popup-info-title {
+  font-size: var(--dg-popup-title-fontsize);
+}
+
+@media screen and (max-width: 1600px) {
+  .dg__list-item {
+
+  }
+}

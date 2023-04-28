@@ -1,0 +1,41 @@
+.uplates {
+  max-width: calc(100% - var(--aside-width)*2);
+  margin: 0 auto;
+}
+
+.uplates__content {
+  display: flex;
+}
+
+.uplates__svg-container {
+  padding: 5% 1% 1% 0;
+  max-width: 1059px;
+  flex-basis: 1059px;
+}
+
+.uplates__plast {
+  fill: #2f2f2f;
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+
+.uplates__plast:hover {
+  fill: #f2f2f246;
+}
+
+@media screen and (max-width: 1024px) {
+  .uplates__content {
+    flex-direction: column;
+  }
+  .uplates__svg-container {
+    flex-basis: auto;
+  }
+  .uplates__content .interactive-plates-list {
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    transform: skewY(-25deg);
+  }
+}

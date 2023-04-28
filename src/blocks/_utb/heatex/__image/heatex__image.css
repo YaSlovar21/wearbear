@@ -1,0 +1,7 @@
+.heatex__image {
+  flex-basis: 490px;
+  width: 100%;
+  min-width: 0;
+  object-fit: contain;
+  object-position: center;
+}

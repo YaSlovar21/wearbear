@@ -1,0 +1,19 @@
+.form__input {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--theme-white-color);
+
+  border: none;
+  outline: none;
+
+
+  min-width: 300px;
+  padding: 25px var(--padding-input-x);
+  background-color: #1f1f1f;
+}
+
+@media screen and (max-width: 1281px) {
+  .form__input {
+    font-size: var(--p-size);
+  }
+}

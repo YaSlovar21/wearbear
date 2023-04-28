@@ -1,0 +1,15 @@
+@import url(../blocks/recomendations/recomendations.css);
+@import url(../blocks/recomendations/__heading/recomendations__heading.css);
+@import url(../blocks/recomendations/__list/recomendations__list.css);
+@import url(../blocks/recomendations/__list-item/recomendations__list-item.css);
+
+@import url(../blocks/recomendation/recomendation.css);
+@import url(../blocks/recomendation/__link-wrappered/recomendation__link-wrappered.css);
+
+@import url(../blocks/recomendation/__leftimage/recomendation__leftimage.css);
+@import url(../blocks/recomendation/__text-content/recomendation__text-content.css);
+
+@import url(../blocks/recomendation/__title/recomendation__title.css);
+@import url(../blocks/recomendation/__predesc/recomendation__predesc.css);
+@import url(../blocks/recomendation/__readmore/recomendation__readmore.css);
+

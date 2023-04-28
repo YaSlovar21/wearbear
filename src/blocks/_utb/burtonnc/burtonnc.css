@@ -1,0 +1,163 @@
+.burtonnc {
+  position: relative;
+  height: 70vh;
+  max-width: calc(100% - var(--aside-width));
+  overflow: hidden;
+  display: flex;
+}
+
+.burtonnc::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: calc(100% + 200px);
+  height: 100%;
+  background-image: url(../../../images/banner-bg.png);
+  animation: pulse 5s ease-in-out infinite alternate;
+
+  z-index: 1;
+}
+
+.burtonnc::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2f2f2f;
+  opacity: .5;
+
+  z-index: 2;
+}
+
+.burtonnc_pto {
+
+}
+
+.burtonnc__pto-fig-bg {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  margin: 0;
+  display: flex;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.burtonnc__content {
+  padding: 45px 0 0 var(--aside-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 4;
+}
+
+.burtonnc__content_page_pto {
+  flex-direction: row;
+}
+.burtonnc__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.burtonnc__info_pto {
+  flex-basis: 980px;
+}
+
+.burtonnc__title {
+  font-size: 64px;
+  position: relative;
+  color: var(--theme-text-color);
+}
+
+.burtonnc__action-block {
+  position: relative;
+}
+
+.burtonnc__action-block_page_btp {
+
+  padding: 15px 10px 10px 0;
+  box-sizing: border-box;
+  display: flex;
+
+}
+
+.burtonnc__action-block_page_btp::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% + var(--aside-width));
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+.burtonnc__action-block_page_btp::after {
+  content: '';
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: calc(2px - var(--aside-width));
+  position: absolute;
+  width: var(--aside-width);
+  height: calc(100% + 1px);
+  background-image: url(../../../images/ut/btp-burton.svg);
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.burtonnc__action-button {
+  background-color: var(--theme-main-color);
+  color: var(--theme-white-color);
+  display: inline-flex;
+}
+
+.burtonnc__action-button_type_link {
+  text-decoration: none;
+  
+}
+
+.burtonnc__image-container {
+  flex-basis: 800px;
+  position: relative;
+  display: flex;
+  flex-shrink: 2;
+  margin-right: 20px;
+}
+
+
+.burtonnc__image {
+  max-width: 262px;
+  margin: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1025px) {
+  .burtonnc {
+    max-width: 100%;
+  }
+
+  .burtonnc__info_pto {
+    flex-basis: 586px;
+  }
+  .burtonnc__title {
+    font-size: 32px;
+  }
+}

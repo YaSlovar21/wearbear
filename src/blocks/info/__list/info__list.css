@@ -1,0 +1,5 @@
+.info__list {
+  margin: 0;
+  list-style-type: none;
+  font-size: var(--info-text-size);
+}

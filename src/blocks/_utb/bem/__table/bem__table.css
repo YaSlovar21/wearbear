@@ -1,0 +1,37 @@
+.bem__table {
+  border-spacing: 6px;
+  color: var(--theme-text-color);
+  font-size: var(--p-size);
+  margin: 30px 0;
+  line-height: 1.4;
+  border-collapse: collapse;
+  border: 1px solid var(--theme-dark-gray-color);
+}
+
+
+
+.bem__table td {
+  border: 1px solid var(--theme-dark-gray-color);
+  padding: 5px;
+}
+
+.bem__table caption {
+  /*background-color: var(--theme-dark-gray-color);
+  padding: 20px 10px;*/
+}
+
+
+
+.bem__table th {
+  text-align: left;
+  border: 1px solid var(--theme-dark-gray-color);
+  padding: 10px 5px;
+}
+
+.bem__table th {
+  background-color: var(--theme-dark-gray-color);
+  padding: 20px 10px;
+  font-weight: 500;
+  font-size: var(--p-size);
+  border: 1px solid #141414;
+}

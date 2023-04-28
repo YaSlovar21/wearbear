@@ -1,0 +1,9 @@
+.bem__title {
+  font-size: var(--h2-size);
+  color: var(--theme-text-color);
+  margin: 0
+}
+
+.bem__title_paragraph {
+  font-size: var(--p-size);
+}

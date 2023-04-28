@@ -1,0 +1,104 @@
+.chaincard {
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transition: all .2s ease-in;
+}
+
+.chaincard:hover {
+    background-color: #cecece;
+}
+
+.chaincard_link {
+    text-decoration: none;
+}
+
+.chaincard__heading {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-equivalent-color);
+
+    width: calc(100% - 20px);
+    margin: 20px auto;
+}
+
+.chaincard__heading_pg {
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.chaincard__heading_page_lp {
+    font-size: var(--p-size);
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.chaincard__img {
+    width: calc(100% - 20px);
+    margin: 0 auto 20px;
+}
+
+.chaincard__img_fit {
+    width: 100%;
+}
+
+.chaincard__img_fit img {
+    width: 100%;
+}
+
+.chaincard__feat-title {
+    font-size: 12px;
+    width: calc(100% - 20px);
+    margin: 20px auto;
+    color: var(--theme-text-color);
+}
+
+.chaincard__list {
+    font-size: 12px;
+    width: calc(100% - 20px);
+    margin: 0 auto 30px;
+}
+
+.chaincard__link {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    background-color: var(--chains-theme-accent-color);
+    color: var(--theme-white-color);
+    transition: all .2s ease-in;
+    text-decoration: none;
+}
+
+.chaincard__link_wa {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    width: calc(100% - 20px);
+    align-self: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.chaincard__link_wa::after {
+    content: '';
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../images/whatsapp-svg.svg);
+}
+
+.chaincard:hover .chaincard__link {
+    background-color: var(--chains-theme-accent-color-hover);
+}

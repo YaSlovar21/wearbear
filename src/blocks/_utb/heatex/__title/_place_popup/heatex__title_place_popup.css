@@ -1,0 +1,19 @@
+.heatex__title_place_popup {
+  font-size: 48px;
+
+  transition: all .7s ease-in;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1201px) {
+  .heatex__title_place_popup {
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width:  769px) {
+  .heatex__title {
+    font-size: 32px;
+  }
+}

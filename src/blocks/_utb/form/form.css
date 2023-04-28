@@ -1,0 +1,13 @@
+/*
+
+form__field - label, в котором заголовок, input и сообщение об ошибке
+
+*/
+
+:root {
+  --padding-input-x :22px;
+}
+
+.form {
+
+}

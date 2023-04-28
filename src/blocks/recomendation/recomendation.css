@@ -1,0 +1,26 @@
+.recomendation {
+
+}
+
+.recomendation_type_link {
+  padding: 28px 39px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.recomendation_pto {
+  display: flex;
+}
+
+.recomendation_pto:hover .recomendation__leftimage {
+  transform: scale(1.05) skewY(15deg);
+}
+
+@media screen and (max-width: 1025px) {
+  .recomendation_type_link {
+    padding: 20px;
+  }
+  .recomendation {
+    padding: 20px;
+  }
+}

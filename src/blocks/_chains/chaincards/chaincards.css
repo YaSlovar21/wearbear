@@ -1,0 +1,42 @@
+.chaincards {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+    flex-wrap: wrap;
+   /* border: 1px solid #a5a5a5;*/
+}
+
+.chaincards__card {
+    flex-basis: calc(25% - 7px);
+    flex-shrink: 3;
+    margin: 0 9px 20px 0;
+}
+
+.chaincards__card:nth-child(4n + 0) {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .chaincards__card {
+        flex-basis: calc(33.3% - 4px);
+        flex-shrink: 3;
+        margin: 0 6px 20px 0;
+    }
+    .chaincards__card:nth-child(4n + 0) {
+        margin-right: 6px;
+    }
+    .chaincards__card:nth-child(3n + 0) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .chaincards__card {
+        flex-basis: calc(100%);
+        margin: 0 0 20px 0;
+
+    }
+    
+
+}

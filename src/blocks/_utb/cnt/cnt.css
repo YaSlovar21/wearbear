@@ -1,0 +1,31 @@
+.cnt {
+  display: flex;
+  margin: 80px 0;
+}
+
+.cnt-heading {
+  margin: 0 0 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 121.52%;
+  /* identical to box height, or 17px */
+
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+
+  color: #C4C4C4;
+}
+
+.cnt-heading_page_main {
+  max-width: 300px;
+}
+
+.cnt-paragraph {
+  font-size: 22px;
+}
+
+.cnt-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}

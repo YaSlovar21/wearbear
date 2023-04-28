@@ -1,0 +1,19 @@
+.bem__link_newwindow {
+  transition: all .3s linear;
+  display: flex;
+  align-items: center;
+}
+
+.bem__link_newwindow::before {
+  content: '';
+  width: 1.3em;
+  height: 1.3em;
+  background-image: url(../../../../../images/svg-elems/i-newwindow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 9px;
+}
+
+.bem__link_newwindow:hover::before {
+  color: var(--theme-main-color);
+}

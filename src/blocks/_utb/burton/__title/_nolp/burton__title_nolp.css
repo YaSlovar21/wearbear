@@ -1,0 +1,21 @@
+.burton__title_nolp {
+  color: var(--theme-main-color);
+  font-size: 52px;
+  line-height: 1.3;
+  font-weight: 700;
+  position:relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1441px) {
+  .burton__title_nolp {
+    font-size: 48px;
+  }
+}
+
+
+@media screen and (max-width: 1025px) {
+  .burton__title_nolp {
+    font-size: 28px;
+  }
+}

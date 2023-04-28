@@ -1,0 +1,27 @@
+.form__submit-button {
+  border: none;
+  outline: none;
+  background: none;
+
+  font-size: 22px;
+  font-weight: 500;
+  width: 100%;
+  background-color: var(--theme-main-color);
+  color: #1f1f1f;
+  padding: 20px 0;
+  max-width: calc(100% - 10px);
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.form__submit-button_rasch {
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1281px) {
+  .form__submit-button {
+    font-size: var(--p-size);
+  }
+}

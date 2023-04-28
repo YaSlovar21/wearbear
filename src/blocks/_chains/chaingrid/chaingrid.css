@@ -1,0 +1,36 @@
+.chaingrid {
+    padding: 0;
+    margin: 30px 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-rows: 500px 500px;
+    grid-auto-rows: 500px;
+
+    gap: 1px;
+}
+
+.chaingrid__list-item {
+    background-color: #fff;
+    border: 1px solid #9f9f9f;
+    border-radius: 4px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.chaingrid__image {
+    width: 100%;
+    flex-basis: 220px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.chaingrid__desc {
+    font-size: var(--p-size-medium);
+    max-width: calc(100% - 20px);
+    margin: 10px auto 0;
+}

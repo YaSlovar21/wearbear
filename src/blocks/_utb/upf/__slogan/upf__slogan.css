@@ -1,0 +1,31 @@
+.upf__slogan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+
+  color: var(--theme-white-color);
+
+  max-width: 670px;
+}
+
+@media screen and (max-width: 1441px) {
+  .upf__slogan {
+    font-size: 20px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  .upf__slogan {
+    font-size: var(--p-size);
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .upf__slogan {
+    max-width: 350px;
+  }
+}

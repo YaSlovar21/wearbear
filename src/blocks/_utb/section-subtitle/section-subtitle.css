@@ -1,0 +1,11 @@
+.section-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--p-size);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+
+  color: var(--theme-text-color);
+  max-width: 988px;
+  margin: 1em 0 2em;
+}

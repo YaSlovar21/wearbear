@@ -1,0 +1,12 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skat {
+  
+}
+
+.skat__line {
+    display: flex;
+}

@@ -1,0 +1,179 @@
+:root {
+  --bem-padding-buttons: 20px;
+  --theme-text-color: #151515;
+  --theme-white-color: #e8e8e8;
+  /*--theme-white-color: #DBDBDB;*/
+  --theme-lightgray-color: #cbcbcb;
+  --theme-gray-color: #a7a7a7;
+  --theme-gray-color-opacity: #a7a7a7e8;
+  --theme-dark-gray-color: #323232;
+  --theme-dark-gray-color-opacity:#323232c3;
+
+  --theme-main-color: #75be4b;
+
+  --main-equivalent-color: #015d4c;
+
+  --form-error-color: #9a290c;
+
+  --aside-width: 100px;
+
+  --bg-color: #1f1f1f;
+  --bg-darker-color: #1a1a1a;
+  --h1-size: 54px;
+  --h2-size: 36px;
+  --h3-size: 24px;
+  /*--p-size-comment: 20px;*/
+  --p-size: 20px;
+  --p-size-medium: 16px;
+  --p-size-small: 14px;
+
+
+  --chains-theme-accent-color: #348236;
+  --chains-theme-accent-color-light: rgba(52, 130, 54, 0.2);
+  --chains-theme-accent-text-color: #fff;
+  --chains-theme-accent-color-hover: #2f7531;
+  --chains-theme-accent-color-active: #2a682b;
+  --chains-theme-unread-color: #348236;
+
+  /**/
+  --section-title-size : 32px;
+  --section-title-sm-size: 24px;
+}
+
+@media screen and (max-width: 1650px) {
+  :root {
+    --aside-width: 50px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  :root {
+    --aside-width: 20px;
+    --h1-size: 48px;
+    --h2-size: 32px;
+    --h3-size: 22px;
+    --p-size: 18px;
+    --section-title-size: 30px;
+    --section-title-sm-size: 24px;
+
+    --h2-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  :root {
+    --aside-width: 20px;
+    --h1-size: 48px;
+    --h2-size: 32px;
+    --h3-size: 22px;
+    --p-size: 16px;
+    --section-title-size : 28px;
+    --section-title-sm-size: 24px;
+
+    --h2-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --aside-width: 10px;
+    --h1-size: 48px;
+    --h2-size: 32px;
+    --h3-size: 20px;
+    --p-size: 16px;
+    --section-title-size : 22px;
+    --section-title-sm-size: 20px;
+
+    --h2-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --aside-width: 10px;
+    --h1-size: 36px;
+    --h2-size: 28px;
+    --h3-size: 18px;
+    --p-size: 16px;
+    --section-title-size : 18px;
+    --section-title-sm-size: 18px;
+
+    --h2-size: 18px;
+  }
+}
+
+.page {
+    /*min-width: 1100px;*/
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы
+    max-width: 100%;*/
+    /* выше установили ограничение по максимальной ширине
+
+    margin: 0 auto;*/
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Manrope', Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+  }
+
+html, body, main {
+    /*position: relative;
+    height: 100%;
+    font-family: 'Inter', Arial, sans-serif;*/
+    background-color: #eeeeee;
+}
+/*
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}*/
+
+
+.bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+  /*background-image: none;
+  background: radial-gradient(63.43% 23.01% at 49.87% 45.13%, #222222e3 0%, #1f1f1f 100%);;*/
+}
+
+
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+
+@media screen and (max-width: 768px) {
+    h3 {
+      letter-spacing: .05em;
+    }
+}
+p {
+  font-size: var(--p-size);
+  line-height: 1.3;
+}

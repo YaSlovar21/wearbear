@@ -1,0 +1,25 @@
+.bem__link_download {
+  transition: all .3s ease-in;
+  display: flex;
+  align-items: center;
+  
+}
+
+.bem__link_download::before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  background-image: url(../../../../../images/svg-elems/i-download.svg);
+  background-size: contain;
+  background-position: center;
+  margin-right: 9px;
+  transition: all .3s ease-in;
+}
+
+.bem__link_download:hover {
+  color: var(--theme-main-color);
+}
+
+.bem__link_download:hover::before {
+  transform: translateY(-5px);
+}

@@ -1,0 +1,16 @@
+.nav__link {
+  text-decoration: none;
+  outline: none;
+  transition: .5s linear;
+
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: var(--theme-text-color);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.nav__link:hover {
+  color: var(--theme-main-color);
+}

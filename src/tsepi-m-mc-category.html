@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename.split('/index.html')[0] %>/"  rel="canonical" />
+    <!-- Yandex.RTB -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class="page">
+  <%= require('html-loader!./inner-metrika-stanko-tsep.html').default %>
+  <header>
+    <%= _.template(require('html-loader!./insets/inner-header.html').default)({fileName: htmlWebpackPlugin.options.filename}) %>
+    <div class="hero hero_category">
+
+    </div>
+  </header>
+  <div class="content-wrapper">
+     <main class="content">
+
+        <nav class="chainsnav">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item"><a href="/">Главная</a></li>
+                <li class="breadcrumbs__list-item"><a href="/prom-chains/">Каталог</a></li>
+                <li class="breadcrumbs__list-item breadcrumbs__list-item_here"><a href="/prom-chains/tsepi-m-mc/">Цепи тяговые пластинчатые</a></li>
+            </ol>
+            <ul class="chainsnav__list">
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'ms28' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/ms28/">МС28</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'ms56' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/ms56/">МС56</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'ms112' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/ms112/">МС112</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'm40' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/m40/">М40</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'm56' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/m56/">М56</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'm80' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/m80/">М80</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'm112' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/m112/">М112</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'm160' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/m160/">М160</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'm224' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/m224/">М224</a>
+                </li>
+                <li class="chainsnav__list-item">
+                    <a class="chainsnav__link <%= mCategoryId === 'm315' ? 'chainsnav__link_active' : '' %>" href="/prom-chains/tsepi-m-mc/m315/">М315</a>
+                </li>
+            </ul>
+        </nav>
+        <!--
+        {
+            name: 'M450-2-250-1',
+            kh: 450,
+            t: 250,
+            b: 55,
+            DB: 42,
+            DP: 60,
+            DK: '-',
+            DP1: '-',
+            DP2: '-',
+            h: 75,                    //Высота пластины
+            s: 10,                   //Толщина пластины
+            alias: 'm450-2-250-1',
+            relevanceChain: 'm450'_.template(require('html-loader!./insets/templates/mchain-template.html').default)(item) ) %>
+        }
+        -->
+        
+        <h1><%= htmlWebpackPlugin.options.heading %></h1>
+        
+ 
+        <ul class="bem__list chaincards">
+            <% generatedChainsFiltered.map((item) => { %>
+                <li class="chaincards__card">
+                    <a class="chaincard chaincard_link" href="/prom-chains/tsepi-m-mc/<%= item.relevanceChain %>/<%= item.alias %>.html">
+                        <h3  class="chaincard__heading">Цепь <%= item.name%></h3>
+                        <img src="<%= require(`./images/thumbs12/tip${item.tip}_isp${item.isp}.png`)%>" class="chaincard__img" alt="Цепь <%= item.name%> <%= tipDictionary[item.tip]%> <%= ispDictionary[item.isp]%> тяговая пластинчатая">
+                        <h4  class="chaincard__feat-title">Характеристики</h4>
+                        <ul class="bem__list chaincard__list">
+                            <li class="bem__list-item">Разрушающая нагрузка: <%= item.kh %> kH</li>
+                            <li class="bem__list-item">Шаг цепи: <%= item.t %> мм</li>
+                            <li class="bem__list-item">Тип цепи: <%= item.tip %></li>
+                            <li class="bem__list-item">Исполнение: <%= item.isp %></li>
+                        </ul>
+                        <span class="bem__link chaincard__link">Цепь <%= item.name %></span>
+                    </a>
+                 </li>
+            <% }) %>
+        </ul>
+        <h2>ГОСТ 588-81</h2>
+        
+        <p>Цепь <%= name%> может иметь шаг от <%= Object.keys(gostInfo['1'])[0] %> мм до <%= Object.keys(gostInfo['1'])[Object.keys(gostInfo['1']).length-1] %> мм. Цепи тяговые пластинчатые <%= name%> согласно ГОСТ могут быть 4 разных типов (втулочные, роликовые, катковые и катковые с ребордой). Вес 1 метра тяговой цепи <%= name %> согласно ГОСТ 588-81 может колебаться.Чем больше шаг цепи, тем меньге вес 1 метра.</p> 
+        <ul class="bem__list"> 
+            <li class="bem__list-item"><%= Object.values(gostInfo['1']).sort(function (a,b) { return a-b})[0] %> кг до <%= Object.values(gostInfo['1']).sort(function (a,b) { return a-b})[Object.values(gostInfo['1']).length-1] %> кг для втулочной цепи,</li>
+            <li class="bem__list-item"><%= Object.values(gostInfo['2']).sort(function (a,b) { return a-b})[0] %> кг до <%= Object.values(gostInfo['2']).sort(function (a,b) { return a-b})[Object.values(gostInfo['2']).length-1] %> кг для роликовой цепи,</li>
+            <li class="bem__list-item"><%= Object.values(gostInfo['3']).sort(function (a,b) { return a-b})[0] %> кг до <%= Object.values(gostInfo['3']).sort(function (a,b) { return a-b})[Object.values(gostInfo['3']).length-1] %> кг для катковой цепи,</li>
+            <li class="bem__list-item">для 4 типа цепи <%= name%> (катки с ребордами) от <%= Object.values(gostInfo['4']).sort(function (a,b) { return a-b})[0] %> кг до <%= Object.values(gostInfo['4']).sort(function (a,b) { return a-b})[Object.values(gostInfo['4']).length-1] %> кг </li>
+        </ul>   
+        </p>
+
+        <%= specChains.length > 0 ? `<h2>Специальные цепи</h2><ul class="bem__list chaincards">` : '' %>
+        <% specChains.map((item) => { %>
+        <li class="chaincards__card">
+            <a class="chaincard chaincard_link" href="/prom-chains/tsepi-m-mc/<%= item.relCategory %>/<%= item.alias %>.html">
+                <h3  class="chaincard__heading">Цепь специальная <%= item.name%></h3>
+                <img src="<%= require(`./images/drawspec/${item.drawFile}`) %>" class="chaincard__img" alt="Цепь <%= item.name%> схематично">
+                <h4  class="chaincard__feat-title">Характеристики</h4>
+                <ul class="bem__list chaincard__list">
+                    <li class="bem__list-item">Разрушающая нагрузка: <%= item.kh %> kH</li>
+                    <li class="bem__list-item">Шаг цепи: <%= item.t %> мм</li>
+                </ul>
+                <span class="bem__link chaincard__link">Цепь <%= item.name %></span>
+            </a>
+        </li>
+        <% }) %>
+        <%= specChains.length > 0 ? `</ul>` : '' %>
+    </main>
+    <div class="adv">
+        <%= require('html-loader!./inner-adv.html').default %>
+    </div>
+  </div>
+ 
+
+  <%= require('html-loader!./insets/inner-footer.html').default %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

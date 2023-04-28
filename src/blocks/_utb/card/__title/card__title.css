@@ -1,0 +1,32 @@
+.card__title {
+  flex-basis: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.035em;
+  color: var(--theme-text-color);
+
+  transition: color .2s ease-in;
+}
+
+.card__title_utermo_object {
+  font-weight: 400;
+}
+
+.card__title_page_spec {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  color: #E4E4E4;
+}
+
+.card__title_place_row {
+  flex-basis: 250px;
+}
+
+@media screen and (max-width: 1025px) {
+  .card__title {
+    font-size: var(--p-size);
+  }
+}

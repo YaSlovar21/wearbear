@@ -1,0 +1,11 @@
+.recomendation__readmore {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 121.52%;
+  /* or 19px */
+
+  letter-spacing: -0.035em;
+
+  color: var(--theme-lightgray-color);
+}

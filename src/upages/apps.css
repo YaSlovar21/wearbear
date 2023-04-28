@@ -1,0 +1,14 @@
+@import url(../blocks/utermo/card/card.css);
+@import url(../blocks/utermo/card/_type_row/card_type_row.css);
+@import url(../blocks/utermo/card/_withlinkwrapper/card_withlinkwrapper.css);
+@import url(../blocks/utermo/card/__title/card__title.css);
+@import url(../blocks/utermo/card/__image-container/card__image-container.css);
+@import url(../blocks/utermo/card/__image/card__image.css);
+@import url(../blocks/utermo/card/__description/card__description.css);
+
+@import url(../blocks/utermo/apps/apps.css);
+@import url(../blocks/utermo/apps/__card/apps__card.css);
+@import url(../blocks/utermo/apps/__dynamic-section/apps__dynamic-section.css);
+@import url(../blocks/utermo/apps/__more-container/apps__more-container.css);
+@import url(../blocks/utermo/apps/__more-button/apps__more-button.css);
+@import url(../blocks/utermo/card/__onhover/card__onhover.css);

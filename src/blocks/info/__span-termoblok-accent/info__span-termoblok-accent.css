@@ -1,0 +1,18 @@
+.info__span-termoblok-accent {
+  color: #a3a3a3;
+  position: relative;
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.info__span-termoblok-accent::before {
+  position: absolute;
+  left: 0px;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../../images/mini_tm_logo_w-o-text.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

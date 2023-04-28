@@ -1,0 +1,10 @@
+.recomendation__leftimage {
+ /* flex-basis: 200px;*/
+  max-width: 150px;
+  margin-right: 40px;
+  object-fit: contain;
+  object-position: left;
+  min-width: 0;
+  transition: transform .3s ease-in;
+  transform: skewY(15deg)
+}
